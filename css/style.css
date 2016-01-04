@@ -33,7 +33,6 @@ p {
   }
 
 .nav:hover {
-      background-color: transparent;
     opacity:1.0;
     box-shadow:none;
 }
@@ -45,6 +44,13 @@ p {
     box-shadow:none;
 }
 
+#headshot {
+    height: 250px;
+    margin: auto 0;
+    float: left;
+    padding: 20px;
+}
+
 /*.button-collapse {
   color: #26a69a;
 }*/
@@ -53,7 +59,6 @@ p {
   box-sizing: border-box;
 }
 
-body { font-family: sans-serif; }
 
 .gallery {
   background: #fff;
@@ -85,6 +90,7 @@ body { font-family: sans-serif; }
   height: 100vh;
   line-height: 0;
   color: rgba(255,255,255,.9);
+  background-attachment: fixed;
 }
   .parallax-container .section {
     width: 100%;
@@ -93,6 +99,9 @@ body { font-family: sans-serif; }
   .parallax-container .section {
     position: absolute;
     top: 40%;
+      -webkit-filter: blur(12px);
+  filter: blur(2px);
+  transform: scale(2) translateY(20px);
   }
   #index-banner .section {
     top: 10%;
@@ -131,19 +140,20 @@ footer.page-footer {
   margin: auto 0;
   vertical-align: center;
   font-size: 55px;
-  color: black;
+  color: #fff;
   padding: 20px;
   width: 100%;
+  text-shadow: 0 1px 0 black;
 }
 
 .header-text2 {
   text-align: center;
   letter-spacing: 2px;
-  padding: 10px;
   margin: auto 0;
   vertical-align: center;
   font-size: 32px;
-  color: black;
+  line-height: 10px;
+  color: white;
   padding-top: 20px;
   width: 100%;
 }
@@ -155,6 +165,11 @@ footer.page-footer {
     height: 0;
     overflow: hidden;
 
+}
+
+
+.input-field {
+  width: 200px;
 }
 
 
