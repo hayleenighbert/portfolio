@@ -9,6 +9,7 @@ body {
   color: black;
 }
 
+
 h1 {
   color: black;
 }
@@ -17,6 +18,9 @@ nav ul a,
 nav .brand-logo {
   color: #000;
   height: 100%;
+  background-color: transparent;
+  opacity:1.0;
+  box-shadow:none;
 }
 
 p {
@@ -28,9 +32,54 @@ p {
   height: 75px;
   }
 
+.nav:hover {
+      background-color: transparent;
+    opacity:1.0;
+    box-shadow:none;
+}
+
+.fa:hover { 
+    color: #0099cc;
+    background-color: transparent;
+    opacity:1.0;
+    box-shadow:none;
+}
+
 /*.button-collapse {
   color: #26a69a;
 }*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #fff;
+}
+
+.gallery-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
 
 .parallax-container {
   height: 100vh;
@@ -40,7 +89,6 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
