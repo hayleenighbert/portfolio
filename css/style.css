@@ -7,6 +7,7 @@
  */
 body {
   color: black;
+  font-family: 'Oxygen', sans-serif;
 }
 
 
@@ -27,9 +28,13 @@ p {
   line-height: 2rem;
 }
 
+a {
+  color: black;
+}
+
 .nav {
   background-color: white;
-  height: 75px;
+  height: 65px;
   }
 
 .nav:hover {
@@ -44,12 +49,6 @@ p {
     box-shadow:none;
 }
 
-#headshot {
-    height: 250px;
-    margin: auto 0;
-    float: left;
-    padding: 20px;
-}
 
 /*.button-collapse {
   color: #26a69a;
@@ -91,17 +90,16 @@ p {
   line-height: 0;
   color: rgba(255,255,255,.9);
   background-attachment: fixed;
+  padding-top: 0px;
 }
   .parallax-container .section {
     width: 100%;
+    padding-top: 0;
   }
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
-      -webkit-filter: blur(12px);
-  filter: blur(2px);
-  transform: scale(2) translateY(20px);
   }
   #index-banner .section {
     top: 10%;
@@ -133,6 +131,10 @@ footer.page-footer {
   color: #000000;
 }
 
+h2 {
+  padding-top: 15px;
+}
+
 .header-text {
   text-align: center;
   letter-spacing: 5px;
@@ -158,6 +160,13 @@ footer.page-footer {
   width: 100%;
 }
 
+.name-text {
+  color: black;
+  font-family: font-family: 'Oxygen', sans-serif;
+  size: 14px;
+  font-weight: bold;
+}
+
 .Flexible-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -167,11 +176,26 @@ footer.page-footer {
 
 }
 
+.pretty-box {
+  background-color: white;
+  color: black;
+  margin: 30px;
+  padding: 30px;
+  vertical-align: center;
+  margin: auto 0;
+
+}
 
 .input-field {
   width: 200px;
 }
 
+#headshot {
+    height: 250px;
+    margin: auto 0;
+    float: left;
+    padding: 20px;
+}
 
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
