@@ -29,7 +29,27 @@ p {
 }
 
 a {
-  color: black;
+  color: white;
+}
+
+a.hover {
+  color: blue;
+}
+
+.resume {
+    display: block;
+    height: 75px;
+    width: 200px;
+    line-height: 60px;
+
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto 0;
+    font-size: 2em;
 }
 
 .nav {
