@@ -55,18 +55,26 @@ a.hover {
 .nav {
   background-color: white;
   height: 65px;
+  border-bottom: 1px black;
+  opacity:.8;
   }
 
 .nav:hover {
     opacity:1.0;
     box-shadow:none;
+    -webkit-animation-delay: 1.0s;
+    -moz-animation-delay:1.0s;
+    animation-delay: 1.0s;
 }
 
 .fa:hover { 
-    color: #0099cc;
+    color: #90bed5;
     background-color: transparent;
     opacity:1.0;
     box-shadow:none;
+    -webkit-animation-delay: 1.0s;
+    -moz-animation-delay:1.0s;
+    animation-delay: 1.0s;
 }
 
 
@@ -119,10 +127,10 @@ a.hover {
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 40%;
+    top: 0%;
   }
   #index-banner .section {
-    top: 10%;
+    top: 0%;
   }
 }
 
@@ -185,24 +193,37 @@ h2 {
   font-family: font-family: 'Oxygen', sans-serif;
   size: 14px;
   font-weight: bold;
+  padding-left: 10px;
 }
 
 .Flexible-container {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     height: 0;
     overflow: hidden;
+    float: center;
 
 }
 
 .pretty-box {
-  background-color: white;
+  background-color: #90bed5;
   color: black;
-  margin: 30px;
   padding: 30px;
+  margin: 10px;
   vertical-align: center;
   margin: auto 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@media screen and (max-width: 100%)   {
+    .pretty-box, .Flexible-container{
+        width:100%;   
+        float:none;
+    }
 
 }
 
@@ -211,9 +232,9 @@ h2 {
 }
 
 #headshot {
-    height: 250px;
+    height: 300px;
     margin: auto 0;
-    float: left;
+    float: center;
     padding: 20px;
 }
 
