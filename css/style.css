@@ -1,10 +1,3 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 body {
   color: black;
   font-family: 'Oxygen', sans-serif;
@@ -77,10 +70,6 @@ a.hover {
     animation-delay: 1.0s;
 }
 
-
-/*.button-collapse {
-  color: #26a69a;
-}*/
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -201,21 +190,19 @@ h2 {
     padding-bottom: 10px;
     padding-top: 10px;
     height: 0;
-    overflow: hidden;
     float: center;
+    line-height: 20px;
 
 }
 
 .pretty-box {
   background-color: #90bed5;
-  color: black;
   padding: 30px;
   margin: 10px;
   vertical-align: center;
   margin: auto 0;
   width: 100%;
   position: relative;
-  overflow: hidden;
   display: inline-block;
 }
 
@@ -280,13 +267,6 @@ h2 {
   from {top:0px; opacity: 0;}
   to {top:200px; opacity: 1;}
 }
-/*---make a basic box ---*/
-
-/*#elementID {
-    color: #000;
-    text-shadow: 1px 1px 1px #ccc;
-    font-size: 1.5em;
-}*/
 
 .icon::before {
     display: inline-block;
@@ -298,11 +278,3 @@ h2 {
     -moz-osx-font-smoothing: grayscale;
     transform: translate(0, 0);
 }
-
-/*.aboutbg {
-  background: url("trillium2.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/

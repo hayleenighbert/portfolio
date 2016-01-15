@@ -22,12 +22,14 @@
           <li><a href="https://github.com/hayleenighbert" target="_blank"><i class="fa fa-github-square"></i></a>
           <li><a href="https://www.linkedin.com/in/hayleenoelle" target="_blank"><i class="fa fa-linkedin-square" color="black"></i></a>
           <li><a href="https://www.instagram.com/hayhayoh/" target="_blank"><i class="fa fa-instagram"></i></a>
-          <li><a href="" target="_blank"><i class="fa fa-twitter-square"></i></li>
+          <!-- <li><a href="" target="_blank"><i class="fa fa-twitter-square"></i></li> -->
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="https://github.com/hayleenighbert">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/hayleenoelle">LinkedIn</a></li>
+          <li><a href="https://github.com/hayleenighbert" target="_blank">Github</a>
+          <li><a href="https://www.linkedin.com/in/hayleenoelle" target="_blank">LinkedIn</a>
+          <li><a href="https://www.instagram.com/hayhayoh/" target="_blank">Instagram</a>
+          <li><a href="" target="_blank">Twitter</li>
         </ul>
           <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
       </div>
@@ -77,7 +79,7 @@
             <h2 class="center brown-text"><i class="fa fa-heart-o"></i></h2>
             <h5 class="center">Passionate</h5>
 
-            <p class="light">An important part of being a strong developer is passion for coding. I'm able to adapt and learn new programming languages and technologies quickly and apply those skills to create clean and functional web sites and apps.</p>
+            <p class="light">An important part of being a strong developer is a clear passion for coding. I'm able to adapt and learn new programming languages and technologies quickly and apply those skills to create clean and functional web sites and apps and like to keep up on the most current and forward-thinking technologies.</p>
           </div>
         </div>
 
@@ -99,21 +101,20 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">More About Me</h5>
+          <h5 class="header col s12 light">About Me</h5>
             <div class="container">
               <div class="section">
                 <div class="row">
                   <div class="col s12 center">
                   <img src="img/me.jpg" alt="" class="circle responsive-img" id="headshot" align="center">
                   <div class="Flexible-container">
-                  <p class="left-align light">
-                  <ul>
-                  <li>Applications</li>
-                  <li>Games</li>
-                  <li>Design</li>
-                  <li>Photography</li>
-                  </ul>
+                  <div class="prettybox">
+                  <strong>Pacific Northwest native and creative entrepreneur.</strong>
 
+                  Before becoming a developer, I was passionate about art, photography, and graphic design. Those passions have fueled me personally and professionally and helped me become more detail-oriented and independent, and owning my own business for several years has taught me a lot. Freelance design has always been a passion of mine and I feel like I can bring those skills to the table in my career as a web developer.
+
+                  As a junior full stack developer and designer, I strive to make abstract concepts into reality with interactive web applications. I've always been very creative and enjoy creating interactive applications that use my creative mindset. I look forward to pursuing web development as a career and look at it as a new and exciting step in my life.
+                  </div>
                   </div>
               </div>
           </div>
@@ -163,33 +164,51 @@
     </div>
   </div>
 
-
-  <footer class="page-footer white">
-<!--     <div class="container">
+<div class="container">
+    <div class="section"><h2 class="center">Games</h2>
+    <center>
       <div class="row">
-        <div class="col l6 s12">
-        <i class="fa fa-paper-plane-o"></i><br>
-          <h5 class="black-text">Contact</h5>
-          <p class="black-text text-lighten-4"> -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
+            <h5 class="center">Pacific Warehouse</h5>
+
+            <a href="#" target="_blank"><img src="img/project2.png" width="100%"></a>
+            <p class="light">A choose your own adventure game built with jQuery.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
+            <h5 class="center">Dinosaur Adventure</h5>
+            <a href="#" target="_blank"><img src="img/project4.png" width="100%"></a>
+            <p class="light">Dinosaur Adventure is a point-and-click adventure built during a 3-hour hackathon using React.js.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 <div class="container">
     <div class="row">
-        <div class="col m10 offset-m1 s12">
+      <div class="col m10 offset-m1 s12">
         <center><i class="fa fa-paper-plane-o"></i><br>
             <h4 class="center-align">Contact Me</h4>
             <div class="row">
-                <form class="col m8 offset-m2 s12" method="post">
-                <?php include 'sendemail.php';?>
+                <form class="col m8 offset-m2 s12" method="get" action="mailto:haylee.nigh@gmail.com" enctype="text/plain">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="name" type="text">
+                            <input id="name" type="text" name="name">
                             <label for="name">Name</label>
                         </div>
                         <div class="input-field col s12">
-                            <input id="email" type="email" class="form-input">
+                            <input id="email" type="email" class="form-input" name="email">
                             <label for="email">Email</label>
                         </div>
                         <div class="input-field col s12">
-                          <textarea id="message" class="materialize-textarea"></textarea>
+                          <textarea id="message" class="materialize-textarea" name="message"></textarea>
                           <label for="message">Message</label>
                         </div>
                     </div>
@@ -197,7 +216,7 @@
                     <div class="divider"></div>
                     <div class="row">
                         <div class="col m12">
-                         <p class="right-align"><button class="btn btn-small waves-effect waves-light" type="submit" name="submit" value="submit">Send Message</button></p>
+                         <p class="right-align"><button class="btn btn-small waves-effect waves-light" type="submit" name="submit" value="send">Send Message</button></p></form>
                         </div>
                     </div>
                 </form>
@@ -231,6 +250,8 @@
 
 
   <!--  Scripts-->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>

@@ -1,20 +1,13 @@
-<?php
-       // from the form
-       $name = trim(strip_tags($_POST['name']));
-       $email = trim(strip_tags($_POST['email']));
-       $message = htmlentities($_POST['message']);
-
-       // set here
-       $subject = "Contact form submitted!";
-       $to = 'haylee.nigh@gmail.com';
-       $body = $message;
-
-       $headers = "From: $email\r\n";
-       $headers .= "Content-type: text/html\r\n";
-
-       // send the email
-       mail($to, $subject, $body, $headers);
-
-       // redirect afterwords, if needed
-       header('Location: thanks.html');
-?>
+$sendto   = "haylee.nigh@gmail.com";
+$usermail = $_POST['email'];
+$content  = nl2br($_POST['msg']);
+$subject  = "New Feedback Message";
+$headers  = "From: " . strip_tags($usermail) . "\r\n";
+$headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html;charset=utf-8 \r\n";
+$msg  = "";
+$msg .= "<h2 style="font-weight: bold; border-bottom: 1px black;">Business Inquiry</h2>\r\n";
+$msg .= "<strong>Sent by:</strong> ".$usermail."\r\n";
+$msg .= "<strong>Message:</strong> ".$content."\r\n";
+$msg .= "";
