@@ -25,6 +25,11 @@ a.hover {
   color: blue;
 }
 
+h4 {
+  margin: auto 0;
+  padding-bottom: 0px;
+}
+
 .resume {
     display: block;
     height: 75px;
