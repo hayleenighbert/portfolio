@@ -12,10 +12,6 @@ nav .brand-logo {
   box-shadow:none;
 }
 
-p {
-  line-height: 2rem;
-}
-
 a {
   color: black;
   font-style: underline;
@@ -24,11 +20,29 @@ a {
 a.hover {
   color: blue;
 }
+h1 {
+  font-size: 5vh;
+}
+h2 {
+  font-size: 4vh;
+}
+p {
+  font-size: 3vmin;
+}
+
+/*h1 {
+  font-size: ;
+
+}
+
+h2 {
+  font-size: 25;
+}
 
 h4 {
   margin: auto 0;
   padding-bottom: 0px;
-}
+}*/
 
 .resume {
     display: block;
@@ -117,7 +131,7 @@ h4 {
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 0%;
+    top: 25%;
   }
   #index-banner .section {
     top: 0%;
@@ -149,9 +163,6 @@ footer.page-footer {
   color: #000000;
 }
 
-h2 {
-  padding-top: 15px;
-}
 
 .header-text {
   text-align: center;
