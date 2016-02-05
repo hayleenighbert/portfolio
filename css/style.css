@@ -8,18 +8,23 @@ nav .brand-logo {
   color: #000;
   height: 100%;
   background-color: transparent;
-  opacity:1.0;
   box-shadow:none;
 }
+.nav {
+  background-color: white;
+  height: 65px;
+  border-bottom: 1px black;
+  }
 
 a {
   color: black;
   font-style: underline;
 }
 
-a.hover {
-  color: blue;
+a .hover {
+  color: grey;
 }
+
 h1 {
   font-size: 5vh;
 }
@@ -59,13 +64,6 @@ h4 {
     margin: auto 0;
     font-size: 2em;
 }
-
-.nav {
-  background-color: white;
-  height: 65px;
-  border-bottom: 1px black;
-  opacity:.8;
-  }
 
 .nav:hover {
     opacity:1.0;
